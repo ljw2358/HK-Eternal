@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ETERNAL - Beyond Life</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Orbitron',sans-serif;
+}
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    overflow-x:hidden;
+}
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+h1{
+    font-size:48px;
+    letter-spacing:3px;
+    margin-bottom:20px;
+}
+.subtitle{
+    font-size:18px;
+    opacity:0.8;
+}
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:40px;
+    max-width:900px;
+    margin:20px auto;
+    box-shadow:0 0 30px rgba(0,255,255,0.3);
+}
+button{
+    margin:10px;
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+    background:#00ffff;
+    color:black;
+    cursor:pointer;
+    font-weight:bold;
+}
+button:hover{
+    background:white;
+}
+footer{
+    text-align:center;
+    padding:40px 20px;
+    font-size:14px;
+    opacity:0.7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>ETERNAL</h1>
+    <div class="subtitle" id="subtitle">Beyond Biology. Beyond Time.</div>
+</header>
+
+<div style="text-align:center;">
+    <button onclick="setLang('ko')">한국어</button>
+    <button onclick="setLang('en')">English</button>
+    <button onclick="setLang('zh')">中文</button>
+    <button onclick="setLang('ar')">العربية</button>
+</div>
+
+<section class="section">
+    <div class="card">
+        <h2 id="title">영생 프로젝트</h2>
+        <p id="content" style="margin-top:20px; line-height:1.8;">
+            바이오 AI, 양자컴퓨팅, 디지털 의식을 통해 인류의 수명을 무한으로 확장합니다.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="card">
+        <h2 id="visionTitle">비전</h2>
+        <p id="visionContent" style="margin-top:20px; line-height:1.8;">
+            인간의 의식을 디지털화하고, 생물학적 한계를 초월하여 영원한 존재로 진화합니다.
+        </p>
+    </div>
+</section>
+
+<footer>
+    Contact: info@hketrnal.com <br>
+    © 2026 ETERNAL Project
+</footer>
+
+<script>
+const translations = {
+    ko:{
+        subtitle:"생명을 넘어, 시간을 넘어.",
+        title:"영생 프로젝트",
+        content:"바이오 AI, 양자컴퓨팅, 디지털 의식을 통해 인류의 수명을 무한으로 확장합니다.",
+        visionTitle:"비전",
+        visionContent:"인간의 의식을 디지털화하고, 생물학적 한계를 초월하여 영원한 존재로 진화합니다."
+    },
+    en:{
+        subtitle:"Beyond Biology. Beyond Time.",
+        title:"Immortality Project",
+        content:"Expanding human lifespan infinitely through Bio-AI, quantum computing, and digital consciousness.",
+        visionTitle:"Vision",
+        visionContent:"Digitizing human consciousness and transcending biological limits into eternal existence."
+    },
+    zh:{
+        subtitle:"超越生命，超越时间。",
+        title:"永生计划",
+        content:"通过生物人工智能、量子计算和数字意识无限延长人类寿命。",
+        visionTitle:"愿景",
+        visionContent:"将人类意识数字化，突破生物极限，进化为永恒存在。"
+    },
+    ar:{
+        subtitle:"ما وراء الحياة، ما وراء الزمن.",
+        title:"مشروع الخلود",
+        content:"توسيع عمر الإنسان بلا حدود من خلال الذكاء الحيوي والكمومي والوعي الرقمي.",
+        visionTitle:"الرؤية",
+        visionContent:"رقمنة الوعي البشري وتجاوز الحدود البيولوجية نحو وجود أبدي."
+    }
+};
+
+function setLang(lang){
+    document.getElementById("subtitle").innerText = translations[lang].subtitle;
+    document.getElementById("title").innerText = translations[lang].title;
+    document.getElementById("content").innerText = translations[lang].content;
+    document.getElementById("visionTitle").innerText = translations[lang].visionTitle;
+    document.getElementById("visionContent").innerText = translations[lang].visionContent;
+
+    if(lang === "ar"){
+        document.body.style.direction = "rtl";
+    } else {
+        document.body.style.direction = "ltr";
+    }
+}
+</script>
+
+</body>
+</html>
