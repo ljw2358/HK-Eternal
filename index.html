@@ -3,66 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ETERNAL - Beyond Life</title>
-
+<title>ETERNAL - Human Evolution Platform</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Orbitron',sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Orbitron',sans-serif;}
 body{
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    background:linear-gradient(135deg,#000428,#004e92);
     color:white;
     overflow-x:hidden;
 }
 header{
     text-align:center;
-    padding:60px 20px;
+    padding:80px 20px;
 }
-h1{
-    font-size:48px;
-    letter-spacing:3px;
-    margin-bottom:20px;
-}
-.subtitle{
-    font-size:18px;
-    opacity:0.8;
-}
-.section{
-    padding:60px 20px;
-    text-align:center;
-}
+h1{font-size:56px;letter-spacing:4px;}
+.subtitle{margin-top:20px;font-size:20px;opacity:0.8;}
+.section{padding:70px 20px;text-align:center;}
 .card{
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(10px);
-    border-radius:20px;
-    padding:40px;
-    max-width:900px;
-    margin:20px auto;
-    box-shadow:0 0 30px rgba(0,255,255,0.3);
+    background:rgba(255,255,255,0.07);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:50px;
+    max-width:1000px;
+    margin:30px auto;
+    box-shadow:0 0 40px rgba(0,255,255,0.3);
 }
+h2{margin-bottom:20px;font-size:32px;}
+p{line-height:1.8;font-size:17px;}
 button{
     margin:10px;
     padding:10px 20px;
     border:none;
-    border-radius:20px;
+    border-radius:30px;
     background:#00ffff;
     color:black;
     cursor:pointer;
     font-weight:bold;
 }
-button:hover{
-    background:white;
-}
+button:hover{background:white;}
 footer{
     text-align:center;
-    padding:40px 20px;
+    padding:50px 20px;
     font-size:14px;
     opacity:0.7;
+}
+.glow{
+    animation:glow 3s infinite alternate;
+}
+@keyframes glow{
+    from{ text-shadow:0 0 10px cyan; }
+    to{ text-shadow:0 0 30px white; }
 }
 </style>
 </head>
@@ -70,8 +61,8 @@ footer{
 <body>
 
 <header>
-    <h1>ETERNAL</h1>
-    <div class="subtitle" id="subtitle">Beyond Biology. Beyond Time.</div>
+    <h1 class="glow">ETERNAL</h1>
+    <div class="subtitle" id="subtitle">Beyond Biology. Beyond Time. Beyond Death.</div>
 </header>
 
 <div style="text-align:center;">
@@ -81,73 +72,165 @@ footer{
     <button onclick="setLang('ar')">العربية</button>
 </div>
 
+<!-- Philosophy -->
 <section class="section">
-    <div class="card">
-        <h2 id="title">영생 프로젝트</h2>
-        <p id="content" style="margin-top:20px; line-height:1.8;">
-            바이오 AI, 양자컴퓨팅, 디지털 의식을 통해 인류의 수명을 무한으로 확장합니다.
-        </p>
-    </div>
+<div class="card">
+<h2 id="phTitle">철학</h2>
+<p id="phContent">
+인간은 유한한 생물인가, 아니면 진화하는 정보 존재인가?  
+ETERNAL은 인간을 ‘의식 데이터’로 재정의합니다.  
+생물학적 수명은 끝날 수 있으나, 의식은 확장될 수 있습니다.
+</p>
+</div>
 </section>
 
+<!-- Technology -->
 <section class="section">
-    <div class="card">
-        <h2 id="visionTitle">비전</h2>
-        <p id="visionContent" style="margin-top:20px; line-height:1.8;">
-            인간의 의식을 디지털화하고, 생물학적 한계를 초월하여 영원한 존재로 진화합니다.
-        </p>
-    </div>
+<div class="card">
+<h2 id="techTitle">핵심 기술</h2>
+<p id="techContent">
+1. Bio-AI 세포 재생 시스템  
+2. 양자 컴퓨팅 기반 의식 시뮬레이션  
+3. 디지털 브레인 맵핑  
+4. 클라우드 의식 저장소  
+5. AI 아바타 재현 엔진
+</p>
+</div>
+</section>
+
+<!-- Roadmap -->
+<section class="section">
+<div class="card">
+<h2 id="roadTitle">로드맵</h2>
+<p id="roadContent">
+2026 – 디지털 의식 모델링 연구  
+2027 – AI 기반 기억 보존 시스템  
+2028 – 클라우드 마인드 베타 테스트  
+2030 – 부분적 디지털 지속성 구현  
+2035 – 완전한 디지털 영속 플랫폼 구축
+</p>
+</div>
+</section>
+
+<!-- Participation -->
+<section class="section">
+<div class="card">
+<h2 id="joinTitle">참여 방법</h2>
+<p id="joinContent">
+• 연구 파트너 신청  
+• 투자자 참여  
+• 베타 사용자 등록  
+• AI 연구원 합류  
+• 글로벌 챕터 개설
+</p>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+<div class="card">
+<h2 id="faqTitle">FAQ</h2>
+<p id="faqContent">
+Q: 이것은 종교인가요?  
+A: 아닙니다. 이것은 기술 기반 진화 플랫폼입니다.  
+
+Q: 영생은 가능한가요?  
+A: 생물학적 영생이 아닌, 정보적 지속성을 목표로 합니다.  
+
+Q: 데이터는 안전한가요?  
+A: 양자 암호화 및 분산 저장 기술을 사용합니다.
+</p>
+</div>
+</section>
+
+<!-- Manifesto -->
+<section class="section">
+<div class="card">
+<h2 id="manTitle">선언문</h2>
+<p id="manContent">
+우리는 죽음을 두려워하지 않는다.  
+우리는 진화를 선택한다.  
+우리는 의식을 확장한다.  
+우리는 시간을 넘어선다.  
+ETERNAL은 시작되었다.
+</p>
+</div>
 </section>
 
 <footer>
-    Contact: info@hketrnal.com <br>
-    © 2026 ETERNAL Project
+Contact: info@hketrnal.com <br>
+© 2026 ETERNAL Global Initiative
 </footer>
 
 <script>
 const translations = {
-    ko:{
-        subtitle:"생명을 넘어, 시간을 넘어.",
-        title:"영생 프로젝트",
-        content:"바이오 AI, 양자컴퓨팅, 디지털 의식을 통해 인류의 수명을 무한으로 확장합니다.",
-        visionTitle:"비전",
-        visionContent:"인간의 의식을 디지털화하고, 생물학적 한계를 초월하여 영원한 존재로 진화합니다."
-    },
-    en:{
-        subtitle:"Beyond Biology. Beyond Time.",
-        title:"Immortality Project",
-        content:"Expanding human lifespan infinitely through Bio-AI, quantum computing, and digital consciousness.",
-        visionTitle:"Vision",
-        visionContent:"Digitizing human consciousness and transcending biological limits into eternal existence."
-    },
-    zh:{
-        subtitle:"超越生命，超越时间。",
-        title:"永生计划",
-        content:"通过生物人工智能、量子计算和数字意识无限延长人类寿命。",
-        visionTitle:"愿景",
-        visionContent:"将人类意识数字化，突破生物极限，进化为永恒存在。"
-    },
-    ar:{
-        subtitle:"ما وراء الحياة، ما وراء الزمن.",
-        title:"مشروع الخلود",
-        content:"توسيع عمر الإنسان بلا حدود من خلال الذكاء الحيوي والكمومي والوعي الرقمي.",
-        visionTitle:"الرؤية",
-        visionContent:"رقمنة الوعي البشري وتجاوز الحدود البيولوجية نحو وجود أبدي."
-    }
+ko:{
+subtitle:"생명을 넘어, 시간을 넘어, 죽음을 넘어.",
+phTitle:"철학",
+phContent:"인간은 유한한 생물인가, 아니면 진화하는 정보 존재인가? ETERNAL은 인간을 ‘의식 데이터’로 재정의합니다. 생물학적 수명은 끝날 수 있으나, 의식은 확장될 수 있습니다.",
+techTitle:"핵심 기술",
+techContent:"1. Bio-AI 세포 재생 시스템\n2. 양자 컴퓨팅 기반 의식 시뮬레이션\n3. 디지털 브레인 맵핑\n4. 클라우드 의식 저장소\n5. AI 아바타 재현 엔진",
+roadTitle:"로드맵",
+roadContent:"2026 – 디지털 의식 모델링 연구\n2027 – AI 기반 기억 보존 시스템\n2028 – 클라우드 마인드 베타 테스트\n2030 – 부분적 디지털 지속성 구현\n2035 – 완전한 디지털 영속 플랫폼 구축",
+joinTitle:"참여 방법",
+joinContent:"• 연구 파트너 신청\n• 투자자 참여\n• 베타 사용자 등록\n• AI 연구원 합류\n• 글로벌 챕터 개설",
+faqTitle:"FAQ",
+faqContent:"Q: 이것은 종교인가요?\nA: 아닙니다. 이것은 기술 기반 진화 플랫폼입니다.\n\nQ: 영생은 가능한가요?\nA: 생물학적 영생이 아닌, 정보적 지속성을 목표로 합니다.\n\nQ: 데이터는 안전한가요?\nA: 양자 암호화 및 분산 저장 기술을 사용합니다.",
+manTitle:"선언문",
+manContent:"우리는 죽음을 두려워하지 않는다.\n우리는 진화를 선택한다.\n우리는 의식을 확장한다.\n우리는 시간을 넘어선다.\nETERNAL은 시작되었다."
+},
+en:{
+subtitle:"Beyond Biology. Beyond Time. Beyond Death.",
+phTitle:"Philosophy",
+phContent:"Are humans finite biological beings or evolving informational entities? ETERNAL redefines humanity as conscious data.",
+techTitle:"Core Technology",
+techContent:"1. Bio-AI Cellular Regeneration\n2. Quantum Consciousness Simulation\n3. Digital Brain Mapping\n4. Cloud Mind Storage\n5. AI Avatar Engine",
+roadTitle:"Roadmap",
+roadContent:"2026 – Consciousness Modeling\n2027 – Memory Preservation AI\n2028 – Cloud Mind Beta\n2030 – Partial Digital Continuity\n2035 – Full Digital Persistence",
+joinTitle:"Participation",
+joinContent:"• Research Partnership\n• Investment\n• Beta Registration\n• Join as AI Researcher\n• Open Global Chapter",
+faqTitle:"FAQ",
+faqContent:"Q: Is this a religion?\nA: No. It is a technology evolution platform.\n\nQ: Is immortality possible?\nA: We aim for informational persistence.",
+manTitle:"Manifesto",
+manContent:"We do not fear death.\nWe choose evolution.\nWe expand consciousness.\nWe transcend time.\nETERNAL has begun."
+},
+zh:{
+subtitle:"超越生命，超越时间，超越死亡。",
+phTitle:"哲学",
+phContent:"人类是有限的生物，还是进化的信息存在？ETERNAL重新定义人类为意识数据。",
+techTitle:"核心技术",
+techContent:"1. 生物AI细胞再生\n2. 量子意识模拟\n3. 数字大脑映射\n4. 云意识存储\n5. AI化身引擎",
+roadTitle:"路线图",
+roadContent:"2026 – 意识建模\n2027 – 记忆保存AI\n2028 – 云意识测试\n2030 – 部分数字持续\n2035 – 完整数字永存",
+joinTitle:"参与方式",
+joinContent:"• 研究合作\n• 投资参与\n• Beta注册\n• 加入AI研究\n• 建立全球分部",
+faqTitle:"FAQ",
+faqContent:"Q: 这是宗教吗？\nA: 不是。这是技术进化平台。",
+manTitle:"宣言",
+manContent:"我们不惧死亡。\n我们选择进化。\n我们扩展意识。\n我们超越时间。\nETERNAL已经开始。"
+},
+ar:{
+subtitle:"ما وراء الحياة، ما وراء الزمن، ما وراء الموت.",
+phTitle:"الفلسفة",
+phContent:"هل الإنسان كائن بيولوجي محدود أم كيان معلوماتي متطور؟ ETERNAL يعيد تعريف الإنسان كبيانات واعية.",
+techTitle:"التقنيات الأساسية",
+techContent:"1. تجديد الخلايا بالذكاء الحيوي\n2. محاكاة الوعي الكمومي\n3. رسم خرائط الدماغ الرقمي\n4. تخزين الوعي السحابي\n5. محرك الصورة الرمزية AI",
+roadTitle:"خريطة الطريق",
+roadContent:"2026 – نمذجة الوعي\n2027 – حفظ الذاكرة بالذكاء الاصطناعي\n2028 – اختبار العقل السحابي\n2030 – استمرارية رقمية جزئية\n2035 – استمرارية رقمية كاملة",
+joinTitle:"المشاركة",
+joinContent:"• شراكة بحثية\n• استثمار\n• تسجيل تجريبي\n• الانضمام كباحث AI\n• فتح فرع عالمي",
+faqTitle:"الأسئلة الشائعة",
+faqContent:"س: هل هذا دين؟\nج: لا، إنه منصة تطور تقني.",
+manTitle:"البيان",
+manContent:"نحن لا نخاف الموت.\nنختار التطور.\nنوسع الوعي.\nنتجاوز الزمن.\nلقد بدأ ETERNAL."
+}
 };
 
 function setLang(lang){
-    document.getElementById("subtitle").innerText = translations[lang].subtitle;
-    document.getElementById("title").innerText = translations[lang].title;
-    document.getElementById("content").innerText = translations[lang].content;
-    document.getElementById("visionTitle").innerText = translations[lang].visionTitle;
-    document.getElementById("visionContent").innerText = translations[lang].visionContent;
-
-    if(lang === "ar"){
-        document.body.style.direction = "rtl";
-    } else {
-        document.body.style.direction = "ltr";
-    }
+for(let key in translations[lang]){
+document.getElementById(key).innerText = translations[lang][key];
+}
+document.body.style.direction = (lang==="ar")?"rtl":"ltr";
 }
 </script>
 
